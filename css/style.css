@@ -19,6 +19,7 @@
   --global-position:center;
   --font-size-input:24px;
   --global-Weights:700;
+  --global-borderRadius: 10px;
 }
 
 body{
@@ -37,4 +38,68 @@ header h2{
   color: var(--backgroundColor-Secondary);
   font-weight: var(--global-Weights);
 }
+
+main{
+  background-color: var(--backgroundColor-cardMain);
+  display: var(--global-display);
+  flex-direction: column;
+  padding: 30px;
+  border-radius: var(--global-size);
+}
+#input{
+  margin-bottom: var(--global-size);
+}
+
+#input h4{
+  color: var(--color-textMain);
+  margin-bottom: 10px;
+  margin-top: var(--global-size);
+}
+
+input{
+  width: 100%;
+  font-size: var(--font-size-input);
+  font-weight: var(--global-Weights);
+  color: var(--backgroundColor-Secondary);
+  padding: 5px 10px;
+  text-align: end;
+  border-radius: var(--global-borderRadius);
+  border: none;
+  background-color: var(--color-textwhite);  
+  
+}
+
+img{
+  position: absolute;
+  margin: auto;
+  padding: 15px;
+}
+
+.bottons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--global-size);
+}
+
+.bottons button{
+  padding: 10px;
+  border-radius: var(--global-borderRadius);
+  font-size: var(--font-size-input);
+  font-weight: var(--global-Weights);
+  background-color: var(--backgroundColor-Secondary);
+  color: var(--backgroundColor-cardMain);
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: var(--backgroundColor-body);
+  color: var(--backgroundColor-Secondary);
+}
+
+.bottons button:nth-child(6){
+  background-color:var(--backgroundColor-cardMain);
+  color: var(--color-textMain);
+}
+  
 

@@ -27,7 +27,8 @@
   <main>
     <div id="input">
       <h4>Bill</h4>
-      <input type="number" name="" id="">
+      <img src="images/icon-dollar.svg">
+      <input type="text" name="currency" id="currency">
       <h4>Select Tip %</h4>
       <div class="bottons">
         <button>5%</button>
@@ -35,27 +36,32 @@
         <button>15%</button>
         <button>25%</button>
         <button>50%</button>
-        <button>Custom</button>
+        <input></input>
       </div>
       <h4>Number of People</h4>
-      <input type="number" name="" id="">
+      <img src="images/icon-person.svg">
+      <input type="text" name="people" id="people">
     </div>
 
 
     <div id="output">
       <div>
-        <div>
+        <div class="text">
           <h4>Tip Amount</h4>
           <p>/ person</p>
         </div>
+        <output aria-placeholder="Custom"></output>
+      </div>
 
-        <div>
+      <div>
+        <div class="text">
           <h4>Total</h4>
           <p>/ person</p>
         </div>
-        <button>Reset</button>
+        <output></output>
       </div>
-      
+
+      <button>Reset</button>
     </div>
   </main>
 
