@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+:root{
+  --backgroundColor-body:hsl(172, 67%, 45%);
+  --backgroundColor-cardMain:hsl(0, 0%, 100%);
+  --backgroundColor-Secondary:hsl(183, 100%, 15%);
+  --color-textMain:hsl(186, 14%, 43%);
+  --color-textSecond:hsl(184, 14%, 56%);
+  --color-textwhite:hsl(185, 41%, 84%);
+
+  --global-size: 20px;
+  --global-sizeAlternative: 40px;
+  --global-display:flex;
+  --global-position:center;
+  --font-size-input:24px;
+  --global-Weights:700;
+}
+
+body{
+  background-color: var(--color-textwhite);
+}
+
+header{
+  display: var(--global-display);
+  justify-content: var(--global-position);
+  align-items: var(--global-position);
+  margin: var(--global-sizeAlternative) var(--global-size);
+}
+
+header h2{
+  letter-spacing: 10px;
+  color: var(--backgroundColor-Secondary);
+  font-weight: var(--global-Weights);
+}
+
