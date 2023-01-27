@@ -1,29 +1,33 @@
 var inputValor = document.querySelector('#currency')
 var inputPeople = document.querySelector('#people')
+var msg = document.querySelector('.msg')
 
-function operation (){
+function operationValor (){
   var valor = inputValor.value  
   Number(valor)
-
-  var people = inputPeople.value
-  Number(people)
-  //inputValor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
   console.log(valor)
-  console.log(people)
-
-  if(people ==  "0"){
-    var msg = document.querySelector('.msg')
-    msg.innerText = "can´t be zero"        
-  }
-    
-
 }
 
+function operationPeople (){
+    var people = inputPeople.value
+    Number(people)
+
+    if(people != 0){   
+      msg.innerText = "all right"
+      msg.style.color = 'green'       
+    } else{
+      msg.innerText = "can´t be zero"
+      msg.style.color = 'red'  
+    }
+    console.log(people)
+}
+//inputValor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
 
 
-inputValor.addEventListener('change',operation)
-inputPeople.addEventListener('change', operation)
+
+inputValor.addEventListener('change',operationValor)
+inputPeople.addEventListener('change', operationPeople)
 
 
 inputValor.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
