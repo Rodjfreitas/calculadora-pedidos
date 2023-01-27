@@ -15,8 +15,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
@@ -38,30 +37,33 @@
         <button>50%</button>
         <input></input>
       </div>
-      <h4>Number of People</h4>
+      <div class="alertapeople">
+        <h4>Number of People</h4> 
+        <p class="msg"></p>
+      </div>
       <img src="images/icon-person.svg">
       <input type="text" name="people" id="people">
     </div>
 
 
     <div id="output">
-      <div>
+      <div class="amount">
         <div class="text">
           <h4>Tip Amount</h4>
           <p>/ person</p>
         </div>
-        <output aria-placeholder="Custom"></output>
+        <output class="amountValue"></output>
       </div>
 
-      <div>
+      <div class="total">
         <div class="text">
           <h4>Total</h4>
           <p>/ person</p>
         </div>
-        <output></output>
+        <output class="totalValue"></output>
       </div>
 
-      <button>Reset</button>
+      <button>RESET</button>
     </div>
   </main>
 

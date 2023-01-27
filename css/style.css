@@ -19,7 +19,7 @@
   --global-position:center;
   --font-size-input:24px;
   --global-Weights:700;
-  --global-borderRadius: 10px;
+  --global-borderRadius: 8px;
 }
 
 body{
@@ -75,6 +75,13 @@ img{
   padding: 15px;
 }
 
+.alertapeople{
+  display: flex;
+  justify-content: space-between;
+  align-items: var(--global-position);
+  color: red;
+}
+
 .bottons{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -89,6 +96,7 @@ img{
   background-color: var(--backgroundColor-Secondary);
   color: var(--backgroundColor-cardMain);
   border: none;
+  letter-spacing: 1px;
 }
 
 button:hover{
@@ -101,5 +109,94 @@ button:hover{
   background-color:var(--backgroundColor-cardMain);
   color: var(--color-textMain);
 }
+
+.amount,.total{
+  display: var(--global-display);
+  justify-content: space-between;
+}
+
+#output{
+  display: var(--global-display);
+  flex-direction: column;
+  background-color: var(--backgroundColor-Secondary);
+  border-radius: var(--global-borderRadius);
+  padding: 30px var(--global-size) var(--global-size);
+}
+
+#output .text{
+  margin-bottom: 30px;
+}
+
+.text h4{
+  color: var(--color-textwhite);
+}
+
+.text p{
+  font-weight: var(--global-Weights);
+  font-size: 13px;
+  color: var(--color-textSecond);
+}
+
+output{
+  font-size: var(--global-sizeAlternative);
+  font-weight: var(--global-Weights);
+  color: var(--backgroundColor-body);
+}
+
+#output button{
+  padding: 10px;
+  border-radius: var(--global-borderRadius);
+  font-size: var(--font-size-input);
+  font-weight: var(--global-Weights);
+  background-color: var(--backgroundColor-body);
+  color: var(--backgroundColor-Secondary);
+  border: none;
+}
+
+#output button:hover{
+  background-color: var(--color-textwhite);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: var(--global-size);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (min-width:900px){
+
+  main{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--global-size);
+    margin: auto;    
+  }
+
+  #output{
+    padding: 50px var(--global-sizeAlternative);
+    padding-bottom: 0;
+  }
+
+  #output .text{
+    margin-bottom: 70px;
+  }
+
+  #output button{
+    margin-top: 110px;
+    margin-bottom: 0;
+    
+  }
+
+ 
+
+}
+
   
 
