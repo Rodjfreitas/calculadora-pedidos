@@ -137,6 +137,10 @@ button:hover{
   color: var(--color-textSecond);
 }
 
+.msg{
+  font-size: 12px;
+}
+
 output{
   font-size: var(--global-sizeAlternative);
   font-weight: var(--global-Weights);

@@ -25,7 +25,7 @@ function operationPeople (){
       msg.innerText = "all right"
       msg.style.color = 'green'       
     } else{
-      msg.innerText = "can´t be zero or empty"
+      msg.innerText = "can´t be zero"
       msg.style.color = 'red'  
     }
     console.log(people)
