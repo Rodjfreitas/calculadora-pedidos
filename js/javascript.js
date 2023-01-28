@@ -26,7 +26,6 @@ function operationValor (){
   inputValor.value = Number(valor).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) 
   Number(valor)
   resultValor = valor
-  console.log(valor)
   
   if(valor > 0){
     msgValor.innerText = "Tudo certo!"
@@ -44,8 +43,6 @@ buttons.forEach((btn)=>{
   btn.addEventListener('click',(e)=>{
     const gorjeta = e.target.value
     gorjetaout = gorjeta
-    console.log(gorjeta)
-    console.log(gorjetaout) 
   })
 })
 
@@ -55,7 +52,8 @@ function customOperation (){
   if(gorjeta > 0){
   Number(gorjeta)
   gorjetaout = gorjeta
-  console.log(gorjeta)
+  custom.style.fontSize = '24px'
+  custom.value = Number(gorjeta) * 100 + " %"
   }else {
     custom.placeholder = 'inválido'    
     custom.value = ""
@@ -97,13 +95,21 @@ function operationPeople (){
 
 
 function Deleted (){
+  gorjetaTotal.value = ""
+  gorjetaPessoa.value = ""
   inputValor.value = ""
   inputPeople.value = ""
+  msgValor.innerText = ""
+  msg.innerText = ""
   gorjeta.value = 0
-  custom.value = 0  
+  custom.value = ""
+  custom.placeholder = 'personalizado'  
   inputValor.placeholder = 'Digite um valor'
   inputPeople.placeholder = 'Qtd de pessoas'
   custom.placeholder = 'personalizado'
+  custom.style.fontSize = '15px'
+  custom.style.textAlign = 'center'
+
 }
 
 
