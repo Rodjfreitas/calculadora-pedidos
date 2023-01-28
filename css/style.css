@@ -75,7 +75,7 @@ img{
   padding: 15px;
 }
 
-.alertapeople{
+.alertapeople,.alertaValor{
   display: flex;
   justify-content: space-between;
   align-items: var(--global-position);
@@ -137,7 +137,7 @@ button:hover{
   color: var(--color-textSecond);
 }
 
-.msg{
+.msg,.msg-valor{
   font-size: 12px;
 }
 
