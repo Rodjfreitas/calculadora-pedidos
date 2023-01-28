@@ -1,6 +1,7 @@
 var inputValor = document.querySelector('#currency')
 var inputPeople = document.querySelector('#people')
 var msg = document.querySelector('.msg')
+var msgValor = document.querySelector('.msg-valor')
 var custom = document.querySelector('.custom')
 
 inputValor.placeholder = 'Digite um valor'
@@ -13,7 +14,14 @@ custom.style.textAlign = 'center'
 function operationValor (){   
   var valor = inputValor.value    
   Number(valor)
-  console.log(valor)
+  
+  if(valor > 0){
+    msgValor.innerText = "Tudo certo!"
+    msgValor.style.color = 'green'
+  } else {
+    msgValor.innerText = "Inválido"
+    msgValor.style.color = 'red'
+  }
 }
 
 
@@ -21,11 +29,11 @@ function operationPeople (){
     var people = inputPeople.value
     Number(people)
 
-    if(people != 0){   
+    if(people > 0){   
       msg.innerText = "tudo certo!"
       msg.style.color = 'green'       
     } else{
-      msg.innerText = "número inválido"
+      msg.innerText = "Inválido"
       msg.style.color = 'red'  
     }
     console.log(people)
