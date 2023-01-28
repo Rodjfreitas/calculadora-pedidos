@@ -1,7 +1,7 @@
 # Calculadora de pedido
 
 
-##Objetivo:
+## Objetivo:
 
 <P> Após realizar um projeto, onde todo o javascript foi baseado em suporte de tutoriais, decidir criar esse projeto para criar autonomia na criação do de códigos javascript. Este projeto me dasafiei inteiramente a criar o código js, sem consultas, baseado apenas nos conteúdos aprendidos através de cursos que me propus a realizar. <p>
 
