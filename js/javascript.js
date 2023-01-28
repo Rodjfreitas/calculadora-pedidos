@@ -22,10 +22,10 @@ function operationPeople (){
     Number(people)
 
     if(people != 0){   
-      msg.innerText = "all right"
+      msg.innerText = "tudo certo!"
       msg.style.color = 'green'       
     } else{
-      msg.innerText = "can´t be zero"
+      msg.innerText = "número inválido"
       msg.style.color = 'red'  
     }
     console.log(people)
